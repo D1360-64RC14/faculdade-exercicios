@@ -195,28 +195,45 @@ programa {
 	}
 
 	funcao logico foiGanhadoraEmDiagonais() {
-		caracter exemploDiagonalPrincipal = tabuleiro[0][0]
-		caracter exemploDiagonalSecundaria = tabuleiro[0][LADOS - 1]
+		retorne foiGanhadorEmDiagonalPrincipal() ou foiGanhadorEmDiagonalSecundaria()
+	}
 
-		se (exemploDiagonalPrincipal == VAZIO ou exemploDiagonalSecundaria == VAZIO) {
+	funcao logico foiGanhadorEmDiagonalPrincipal() {
+		caracter exemploDiagonalPrincipal = tabuleiro[0][0]
+
+		se (exemploDiagonalPrincipal == VAZIO) {
 			retorne falso
 		}
-		
+
 		logico ganhadorEmPrincipal = verdadeiro
+
+		para (inteiro diPri = 0; diPri < LADOS; diPri++) {
+			se (exemploDiagonalPrincipal != tabuleiro[diPri][diPri]) {
+				ganhadorEmPrincipal = falso
+			}
+		}
+
+		retorne ganhadorEmPrincipal
+	}
+
+	funcao logico foiGanhadorEmDiagonalSecundaria() {
+		caracter exemploDiagonalSecundaria = tabuleiro[0][LADOS - 1]
+
+		se (exemploDiagonalSecundaria == VAZIO) {
+			retorne falso
+		}
+
 		logico ganhadorEmSecundaria = verdadeiro
 
 		para (inteiro diPri = 0; diPri < LADOS; diPri++) {
 			inteiro diSec = LADOS - 1 - diPri
 			
-			se (exemploDiagonalPrincipal != tabuleiro[diPri][diPri]) {
-				ganhadorEmPrincipal = falso
-			}
-			se (exemploDiagonalSecundaria != tabuleiro[diSec][diSec]) {
+			se (exemploDiagonalSecundaria != tabuleiro[diPri][diSec]) {
 				ganhadorEmSecundaria = falso
 			}
 		}
 
-		retorne ganhadorEmPrincipal ou ganhadorEmSecundaria
+		retorne ganhadorEmSecundaria
 	}
 
 	funcao logico houveEmpate() {
@@ -228,7 +245,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3364; 
+ * @POSICAO-CURSOR = 4554; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
