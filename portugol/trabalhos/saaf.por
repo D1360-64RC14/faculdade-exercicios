@@ -1,4 +1,4 @@
-programa {
+programa {
 	const inteiro QUANTIDADE_MAX = 5
 
 	const caracter OP_INSERIR = 'C'
@@ -14,7 +14,7 @@ programa {
 
 	logico saiuDoSistema = falso
 
-	funcao inicio() {
+	funcao inicio() {
 		inicializarDados()
 
 		enquanto (nao saiuDoSistema) {
@@ -99,6 +99,8 @@ programa {
 
 	funcao rotinaInserirFuncionario() {
 		apresentacao()
+
+		
 	}
 
 	funcao rotinaConsultarFuncionario() {
@@ -144,7 +146,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 818; 
+ * @POSICAO-CURSOR = 242; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
