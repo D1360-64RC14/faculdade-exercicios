@@ -1,3 +1,12 @@
+/**
+ * ## Grupo
+ * 
+ * |  RA  |       Nome      |
+ * | ---- | --------------- |
+ * | 1424 | Diego Garcia    |
+ * | 1572 | Alexandre Rossi |
+ */
+
 programa {
 	inclua biblioteca Matematica --> mat
 
@@ -181,7 +190,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1080; 
+ * @POSICAO-CURSOR = 144; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
