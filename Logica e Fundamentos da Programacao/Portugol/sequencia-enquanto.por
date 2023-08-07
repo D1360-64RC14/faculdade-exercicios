@@ -12,8 +12,11 @@ programa
 
 		escreva("A sequência é:\n")
 
-		para (inteiro indice = 0; indice <= numeroInformado; indice++) {
+		inteiro indice = 0
+		enquanto (indice <= numeroInformado) {
 			escreva("  ", indice, "\n")
+
+			indice++
 		}
 	}
 }
@@ -22,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 270; 
+ * @POSICAO-CURSOR = 140; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

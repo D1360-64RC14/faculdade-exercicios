@@ -9,10 +9,12 @@ programa
 		leia(numeroInformado)
 
 		limpa()
-		escreva("Os números ímpares entre 1 e ", numeroInformado, " são:\n")
-		
-		para (inteiro impares = 1; impares <= numeroInformado; impares += 2) {
-			escreva("  ", impares, "\n")
+		escreva("Os divisores de ", numeroInformado, " são:\n")
+
+		para (inteiro possivelDivisor = 1; possivelDivisor <= numeroInformado; possivelDivisor++) {
+			se (numeroInformado % possivelDivisor == 0) {
+				escreva("  ", possivelDivisor, "\n")
+			}
 		}
 	}
 }
@@ -21,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 330; 
+ * @POSICAO-CURSOR = 399; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

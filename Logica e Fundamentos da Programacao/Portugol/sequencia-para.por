@@ -3,18 +3,18 @@ programa
 	
 	funcao inicio()
 	{
-		// Escreva um algoritmo que calcule e imprima o
-		// produto dos números ímpares de 1 a 20.
+		inteiro numeroInformado
 
-		const inteiro fim = 20
+		escreva("Informe um número inteiro: ")
+		leia(numeroInformado)
 
-		inteiro produto = 1
+		limpa()
 
-		para (inteiro i = 1; i <= fim; i += 2) {
-			produto *= i
+		escreva("A sequência é:\n")
+
+		para (inteiro indice = 0; indice <= numeroInformado; indice++) {
+			escreva("  ", indice, "\n")
 		}
-
-		escreva("O produto dos ímpares de 0 até ", fim, " é ", produto)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -22,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 259; 
+ * @POSICAO-CURSOR = 270; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
